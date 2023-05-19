@@ -26,9 +26,13 @@ body {
     grid-area: navbar;
 }
 
+.fa-shop{
+    padding-right: 0.3em;
+}
+
 .navbar h1 {
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
     margin-left: 1em;
     font-weight: 200;
 }
@@ -95,6 +99,7 @@ body {
 .movil img {
     width: 100%;
     height: 283px;
+    cursor: pointer;
     filter: grayscale(100%);
     transition: 1s;
 }
@@ -174,8 +179,16 @@ button:hover {
     font-size: 1.2em;
     color: white;
 }
+.icono{
+    cursor: pointer;
+    transition: 1s;  
+}
+.icono:hover{
+    transform: scale(2);
+}
 
-.social-networks {
+
+.redes-sociales {
     margin-top: 0.5em;
 }
 
