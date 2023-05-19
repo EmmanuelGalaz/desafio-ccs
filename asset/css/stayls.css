@@ -19,7 +19,7 @@ body {
 }
 
 .navbar {
-    background-color: #0c791b;
+    background-color: #41c052;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ body {
     font-weight: 200;
 }
 
-.mobile-icon {
+.mobile {
     color: white;
     cursor: pointer;
     font-size: 1em;
@@ -63,7 +63,7 @@ body {
     
 }
 
-.select {
+.selector {
     
     width: 80%;
     height: 2em;
@@ -71,6 +71,7 @@ body {
     -webkit-box-shadow: 0px 4px 8px -3px #525252bf;
     -moz-box-shadow: 0px 4px 8px -3px #525252bf;
     box-shadow: 0px 4px 8px -2px #525252bf;
+    cursor: pointer;
 }
 
 .main {
@@ -100,12 +101,12 @@ body {
     width: 100%;
     height: 283px;
     cursor: pointer;
-    filter: grayscale(100%);
+    filter: grayscale(1);
     transition: 1s;
 }
 .movil img:hover{
-    filter: grayscale(0%);
-    transform: scale(1.06);
+    filter: grayscale(0);
+    transform: scale(1.12);
 
 }
 
@@ -120,16 +121,16 @@ button {
     color: rgb(237, 237, 237);
     border: none;
     border-radius: 5%;
-    background-color: #0c791b;
+    background-color: #41c052;
     cursor: pointer;
     font-size: 1em;
     font-weight: bold;
     transition: 1s;
-    filter: grayscale(100%);
+    filter: grayscale(1);
     
 }
 button:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0);
     
 
 }
@@ -155,12 +156,12 @@ button:hover {
     padding: 1em;
     border: 1px solid silver;
     font-size: 1em;
-    color:#0c791b;
+    color:#41c052;
 }
 
 .footer {
     grid-area: footer;
-    background-color:#0c791b;
+    background-color:#41c052;
     margin-top: 2em;
     color: white;
     display: flex;
@@ -181,10 +182,14 @@ button:hover {
 }
 .icono{
     cursor: pointer;
-    transition: 1s;  
+    transition: 1s; 
+    filter:saturate(0);
+    
 }
 .icono:hover{
     transform: scale(2);
+    filter:saturate(1);
+    
 }
 
 
@@ -237,6 +242,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         list-style: none;
+        cursor: pointer;
         color: white;
         padding: 0;
     }
@@ -244,6 +250,7 @@ button:hover {
     .menu li {
         padding-bottom: 1em;
         text-align: center;
+        cursor: pointer;
     }
 
     .main {
@@ -271,7 +278,7 @@ button:hover {
     }
 
     button:hover {
-        background-color: #1a3e0f;
+        background-color: #3d742d;
     }
 
     .footer {
