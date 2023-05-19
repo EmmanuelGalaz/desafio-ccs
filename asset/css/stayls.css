@@ -1,0 +1,273 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Vercion movil */
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.4fr 0.7fr 4fr 0.5fr;
+    grid-template-areas:
+        "navbar"
+        "filtro"
+        "main"
+        "pagimas"
+        "footer";
+}
+
+.navbar {
+    background-color: #0c791b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: navbar;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 1em;
+    margin-left: 1em;
+    font-weight: 200;
+}
+
+.mobile-icon {
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 1.2em;
+}
+
+.menu {
+    display: none;
+}
+
+.filtro {
+    
+    background-color: rgb(216, 226, 200);
+    grid-area: filtro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro p {
+    margin: 0;
+    
+}
+
+.select {
+    
+    width: 80%;
+    height: 2em;
+    border: none;
+    -webkit-box-shadow: 0px 4px 8px -3px #525252bf;
+    -moz-box-shadow: 0px 4px 8px -3px #525252bf;
+    box-shadow: 0px 4px 8px -2px #525252bf;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.movil {
+    margin-top: 2em;
+    width: 80%;
+    height: 365px;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 6px 15px -3px rgba(18, 18, 18, 0.75);
+    -moz-box-shadow: 0px 6px 15px -3px rgba(19, 19, 19, 0.75);
+    box-shadow: 0px 6px 15px -3px rgba(19, 19, 19, 0.75);
+}
+
+.movil img {
+    width: 100%;
+    height: 283px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.movil img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.06);
+
+}
+
+.titulo {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+button {
+    width: 35%;
+    height: 3em;
+    color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 5%;
+    background-color: #0c791b;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 1s;
+    filter: grayscale(100%);
+    
+}
+button:hover {
+    filter: grayscale(0%);
+    
+
+}
+
+.plus {
+    margin-left: 0.2em;
+    font-size: 0.8em;
+}
+
+.escritorio {
+    display: none;
+}
+
+.pagimas {
+    margin-top: 2em;
+    grid-area: pagimas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-pag {
+    padding: 1em;
+    border: 1px solid silver;
+    font-size: 1em;
+    color:#0c791b;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:#0c791b;
+    margin-top: 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h3,
+.footer a {
+    margin: 0.2em;
+    font-weight: 200;
+}
+
+.footer a {
+    font-size: 1.2em;
+    color: white;
+}
+
+.social-networks {
+    margin-top: 0.5em;
+}
+
+
+
+
+/* ----------------- */
+/*  version escritorio */
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr 6fr;
+        grid-template-areas:
+            "navbar filtro"
+            "navbar main"
+            "navbar main"
+            "navbar main"
+            "footer pagimas";
+    }
+
+    .filtro {
+        height: 4em;
+    }
+
+    .filtro p {
+        margin: 0.5em 0 0 0;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        margin: 1em 0 1em 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: white;
+        padding: 0;
+    }
+
+    .menu li {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns:auto auto auto;
+        gap: 20px 25px ;
+        
+    }
+
+    .escritorio {
+        display: flex;
+    }
+
+    .movil,
+    .escritorio {
+        margin: auto;
+        margin-top: 1.5em;
+        gap: 0.2em;
+    }
+
+    button {
+        width: 40%;
+        height: 2em;
+        ;
+    }
+
+    button:hover {
+        background-color: #1a3e0f;
+    }
+
+    .footer {
+        margin: 0;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+
+
+/*Verciom tablet*/
